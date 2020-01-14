@@ -1,0 +1,138 @@
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: #232529;
+  background-color: #ffffff;
+}
+
+/* Layout — we should probably use the grid property */
+
+.wrapper {
+  margin: 0 auto;
+  width: 720px;
+}
+
+/* Typography */
+
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: -1px;
+  padding: 0.5em 0 0.25em 0;
+
+}
+.section-title {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  color: #6b706c;
+}
+
+.jump-link {
+  text-align: center;
+}
+
+
+/* Flag and navigation */
+.global-nav {
+  padding: 1em 0 2em 0;
+  background-color: #f9f9f6;
+}
+
+.flag {
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 700;
+  font-size: 5.25em;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin: 24px 0;
+  padding: 0 0 32px 0;
+  border-bottom: 1px solid #efefef;
+}
+
+.motto  {
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+  display: block;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #404754;
+  line-height: 1;
+  font-size: 1.125em;
+  width: 16em;
+  margin: -36px auto 0 auto;
+  background-color: #f9f9f6;
+}
+
+.motto span {
+  font-family: 'Playfair Display', serif;
+  text-transform: lowercase;
+  font-style: italic;
+  letter-spacing: normal;
+  font-size: 0.9em;
+}
+
+.global-footer {
+  background: #232529;
+  padding: 2em;
+}
+
+
+.people-list {
+	padding: 1em 0;
+	margin: 2em 0;
+}
+
+.people-list ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/* Person */
+.person {
+  border-bottom: 1px solid #efefef;
+  padding: 20px 0 12px 0;
+}
+
+.person h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-family: 'Playfair Display', serif;
+}
+.title {
+}
+.meta {
+font-variant-numeric: oldstyle-nums;
+font-family: 'Libre Franklin', sans-serif;
+text-transform: uppercase;
+font-size: 12px;
+letter-spacing: 0.5px;
+color: #6b706c;
+}
+.volume {}
+.years {}
+.midot {
+  color: #cccccc;
+  padding: 0 8px;
+}
+
+  /*
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Playfair Display SC', serif;
+  font-family: 'Playfair Display', serif;
+  */

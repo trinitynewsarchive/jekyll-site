@@ -1,0 +1,90 @@
+---
+title: Chairpersons & Editors
+---
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:500|Merriweather:400,400i|Playfair+Display+SC:400,700|Playfair+Display:400,400i&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <header class="global-nav">
+      <div class="wrapper">
+
+
+      <h1 class="flag">
+        Trinity News
+      </h1>
+      <p class="motto">An Archive <span>from</span> 1953 <span>to</span> 2020</p>
+      <!-- <nav>
+        <ul>
+          <li class="nav-link">
+
+          </li>
+        </ul>
+      </nav> -->
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <h1 class="page-title">Chairpersons & Editors</h1>
+        <p class="jump-link">Jump to <a href="#chairpersons">Chairpersons, 1953—1980</a>  or  <a href="#editors">Editors, 1980—2020</a></p>
+
+        <p>This material is available thanks to a donation of five bound volumes by Colin Smythe. Funding to digitise the volumes was generously provided by the TCD Assocation and Trust and the Publications Committee and carried out by Glenbeigh Records Management. The project was organised by Martin McKenna (editor, 2008–9) and launched at the Publications Committee Alumni Dinner in the Atrium on March 25, 2011.</p>
+
+        <h4>Terminology</h4>
+        <p>This material is available thanks to a donation of five bound volumes by Colin Smythe. Funding to digitise the volumes was generously provided by the TCD Assocation and Trust and the Publications Committee and carried out by Glenbeigh Records Management.</p>
+
+        <h4>Accuracy</h4>
+        <p>The project was organised by Martin McKenna (editor, 2008–9) and launched at the Publications Committee Alumni Dinner in the Atrium on March 25, 2011.</p>
+
+        <section id="chairpersons" class="people-list">
+          <h2 class="section-title">Chairpersons (1953—1980)</h2>
+          <ol>
+          {% assign editors = site.data.editors | where: "title", "Chairperson" %}
+          {% for person in editors %}
+          <li class="person">
+
+
+            <h1>{{person.name}}</h1>
+            <p class="meta">
+              <span class="volume">Volume {{person.volume}}</span><span class="midot"> • </span><span class="years">{{person.start_year}}—{{person.end_year}} {%if person.term%}<span class="midot"> • </span> {{person.term}} term{% endif %}</span>
+            </p>
+
+
+          </li>
+          {% endfor %}
+          </ol>
+        </section>
+        
+        <section id="editors" class="people-list">
+          <h2 class="section-title">Editors (1980—2020)</h2>
+          <ol start="81">
+          {% assign editors = site.data.editors | where: "title", "Editor" %}
+          {% for person in editors %}
+          <li class="person">
+
+
+            <h1>{{person.name}}</h1>
+            <p class="meta">
+              <span class="volume">Volume {{person.volume}}</span><span class="midot"> • </span><span class="years">{{person.start_year}}—{{person.end_year}} {%if person.term%}<span class="midot"> • </span> {{person.term}} term{% endif %}</span>
+            </p>
+
+
+
+          {% endfor %}
+          </ol>
+        </section>
+      </div>
+    </main>
+    <footer class="global-footer">
+      Footer
+    </footer>
+  </body>
+</html>
