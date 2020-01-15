@@ -16,7 +16,21 @@ body {
 }
 
 /* Typography */
+.banner {
+	background-color: #f9f9f6;
+	padding: 0 0 56px 0;
+}
 
+.banner h2 {
+	font-size: 3.25em;
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.2;
+}
 
 .page-title {
   font-family: 'Playfair Display', serif;
@@ -42,6 +56,10 @@ body {
   text-align: center;
 }
 
+a {
+	color: #2474e5;
+	text-decoration: none;
+}
 
 /* Flag and navigation */
 .global-nav {
@@ -53,7 +71,7 @@ body {
   text-align: center;
   font-family: 'Playfair Display SC', serif;
   font-weight: 700;
-  font-size: 4.75em;
+  font-size: 3.75em;
   letter-spacing: 1px;
   line-height: 1;
   margin: 24px 0;
@@ -69,7 +87,7 @@ body {
   letter-spacing: 1px;
   color: #404754;
   line-height: 1;
-  font-size: 1.125em;
+  font-size: 1em;
   width: 16em;
   margin: -36px auto 0 auto;
   background-color: #f9f9f6;
