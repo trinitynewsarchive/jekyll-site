@@ -6,63 +6,74 @@ layout: default
 <main>
   <div class="wrapper">
     
-    <h1 class="page-title">Archive</h1>
+    <h1 class="page-title xx-large">Browse the full archive</h1>
 
     <p>This material is available thanks to a donation of five bound volumes by Colin Smythe. Funding to digitise the volumes was generously provided by the TCD Assocation and Trust and the Publications Committee and carried out by Glenbeigh Records Management. The project was organised by Martin McKenna (editor, 2008–9) and launched at the Publications Committee Alumni Dinner in the Atrium on March 25, 2011.</p>
 
     
     <nav>
-	    <h3>Decades</h3>
-	    <ol class="archive-grid decades">
-		    <li class="volume-link">
-				<a href="/archive/1950s/">1950’s</a>
+	    <h2 class="large">Browse by decade</h2>
+	    
+	    <ol class="collection-link-grid decades">
+		    <li class="collection-link allcaps">
+				<a href="/archive/decade/1953-1959">1953&mdash;1959</a>
 			</li>
-			<li class="volume-link">
-				<a href="/archive/1960s/">1960s</a>
+			<li class="collection-link allcaps">
+					<a href="/archive/decade/1960-1969">1960&mdash;1969</a>
 			</li>
-			<li class="volume-link">
-				<a href="/archive/1970s/" class="some">1970s</a>
+			<li class="collection-link allcaps">
+				<a href="/archive/decade/1970-1979" class="some">1970&mdash;1979</a>
 			</li>
-			<li class="volume-link">
-				<a href="/archive/1980s/" class="none">1980s</a>
+			<li class="collection-link allcaps">
+				<a href="/archive/decade/1980-1989" class="none">1980&mdash;1989</a>
 			</li>
-			<li class="volume-link">
-				<a href="/archive/1990s/" class="some">1990s</a>
+			<li class="collection-link allcaps">
+				<a href="/archive/decade/1990-1999" class="some">1990&mdash;1999</a>
 			</li>
-			<li class="volume-link">
-				<a href="/archive/2000s/" class="some">2000s</a>
+			<li class="collection-link allcaps">
+				<a href="/archive/decade/2000-2009" class="some">2000&mdash;2009</a>
 			</li>
-			<li class="volume-link">
-				<a href="/archive/2010s/">2010s</a>
-			</li>
-			<li class="volume-link">
-				<a href="/archive/2020s/">2020s</a>
+			<li class="collection-link allcaps">
+				<a href="/archive/decade/2010-2019">2010&mdash;2019</a>
 			</li>
 		</ol>
 	</nav>
 	
 	<nav>
-		<h3>Volumes</h3>
-		<ol class="archive-grid">
+		<h2 class="large">Browse by volume*</h2>
+		<ol class="collection-link-grid volumes">
 		
 			{% for volume in site.data.volumes %}
-			<li class="volume-link">
-				<a href="/archive/volume/{{volume.volume}}" class="{{volume.achive_status}}">
-					Vol. {{volume.volume}}  <span>{{volume.start_year}}—{{volume.end_year}}</span>
-					</a>
+			<li class="collection-link">
+				<a href="/archive/volume/vol-{{volume.volume}}" class="{{volume.achive_status}}">
+					Vol. {{volume.volume}}  
+					<span class="x-small">{{volume.start_year}}—{{volume.end_year}}</span>
+				</a>
 			</li>
 			{% endfor %}
 		</ol>	
 	</nav>
+	
+	<section id="notes">
+		<h5 class="small">A note on volume numbers</h5>
+		<p class="x-small">This material is available thanks to a donation of five bound volumes by Colin Smythe. Funding to digitise the volumes was generously provided by the TCD Assocation and Trust and the Publications Committee and carried out by Glenbeigh Records Management.</p>
+	</section>
+	
+	<div class="callout">
+		<h3 class="medium"> Missing issues</h3>
+		<p class="small">Trinity News is Ireland's oldest student newspaper, published from <a href="">Trinity College Dublin</a>. It is an independent newspaper, funded by Trinity Publications, which reports on the news and views of the students and staff of Dublin University, and the broader Irish higher education sector. The newspaper was first published in 1953 and is using this date as the first volume that the volume numbers are currently derived.</p>
+	</div>
 
   </div>
-  
-  
+
+ 
   
 </main>
 
 
+{% comment %} 
 
+	
 {% assign collection = site.data.volumes | where_exp: "item", "item.volume == 55" %}
 
 {% for item in collection %}
@@ -79,37 +90,9 @@ layout: default
 
 {% endfor %}
 
+{% endcomment %} 
 
 
-
-
-
-
-
-
-
-<!--
-<div class="wrapper">
-	<h2>Decades</h2>
-	<nav>
-		<a href="#fifties">1950—1959</a>
-		<span class="midot">•</span>
-		<a href="">1960—1969</a>
-		<span class="midot">•</span>
-		<a href="">1970—1979</a>
-		<span class="midot">•</span>
-		<a href="">1980—1989</a>
-		<span class="midot">•</span>
-		<a href="">1990—1999</a>
-		<span class="midot">•</span>
-		<a href="">2000—2009</a>
-		<span class="midot">•</span>
-		<a href="">2010—2019</a>
-		<span class="midot">•</span>
-		<a href="">2020</a>
-	</nav>
-</div>
--->
 
 
 

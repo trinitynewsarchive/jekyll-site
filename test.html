@@ -55,6 +55,7 @@ layout: default
 		<h6 class="xx-small allcaps">Person list</h6>
 		
 		<ol class="person-list">
+			<h2 class="x-large">Chairs, 1953&ndash;1980</h2>
 			
 			<li class="person">
 	
@@ -84,6 +85,52 @@ layout: default
 			</li>
 
 		</ol>
+		
+		
+		<h6 class="xx-small allcaps">Archive links</h6>
+		
+		<nav>
+		    <h3 class="medium">Decades</h3>
+		    
+		    <ol class="collection-link-grid decades">
+			    <li class="collection-link allcaps">
+					<a href="/archive/decades/1953-1959">1953&mdash;1959</a>
+				</li>
+				<li class="collection-link allcaps">
+					<a href="/archive/1960s/">1960&mdash;1969</a>
+				</li>
+				<li class="collection-link allcaps">
+					<a href="/archive/1970s/" class="some">1970&mdash;1979</a>
+				</li>
+				<li class="collection-link allcaps">
+					<a href="/archive/1980s/" class="none">1980&mdash;1989</a>
+				</li>
+				<li class="collection-link allcaps">
+					<a href="/archive/1990s/" class="some">1990&mdash;1999</a>
+				</li>
+				<li class="collection-link allcaps">
+					<a href="/archive/2000s/" class="some">2000&mdash;2009</a>
+				</li>
+				<li class="collection-link allcaps">
+					<a href="/archive/2010s/">2010&mdash;2019</a>
+				</li>
+			</ol>
+		</nav>
+		
+		<nav>
+			<h3 class="medium">Volumes</h3>
+			<ol class="collection-link-grid volumes">
+			
+				{% for volume in site.data.volumes %}
+				<li class="collection-link">
+					<a href="/archive/volume/{{volume.volume}}" class="{{volume.achive_status}}">
+						Vol. {{volume.volume}}  
+						<span class="x-small">{{volume.start_year}}—{{volume.end_year}}</span>
+					</a>
+				</li>
+				{% endfor %}
+			</ol>	
+		</nav>
 		
 		
 		

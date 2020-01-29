@@ -157,6 +157,11 @@ a:hover {
 	padding: 1rem 0;
 }
 
+
+/* ~
+GLOBAL NAV
+~ */
+
 .nav-link {
 	list-style: none;
 	padding: 0;
@@ -176,6 +181,70 @@ a:hover {
 .nav-link a:hover {
 	background: rgba(133, 140, 136, 0.05);
 }
+
+
+/* ~
+LINK GRIDS
+~ */
+
+.collection-link-grid {
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 0.5rem;
+	grid-row-gap: 0.5rem;
+}
+
+.collection-link-grid.decades {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.collection-link {
+	list-style: none;
+}
+
+.collection-link a {
+	font-family: 'Libre Franklin', sans-serif;
+	display: block;
+	text-align: center;
+	padding: 1.25rem 1rem;
+	border-radius: 0.25rem;
+	border: 1px solid #E3E6E4;
+}
+
+
+.collection-link-grid.volumes .collection-link a {
+	padding: 1rem 1rem 1.125rem 1rem;
+}
+
+.collection-link a:hover {
+	background: #F7F7F2;
+	text-decoration: none;
+}
+
+.collection-link span {
+	display: block;
+	font-size: 0.675rem;
+	line-height: 1;
+	margin: 0.3rem 0 0 0;
+}
+
+/*
+.collection-link a.some {
+	background: none;
+	border-color: #FCE7C4;
+}
+
+.collection-link a.none {
+	background: none;
+	border-color: #FDC1BF;
+}
+
+
+*/
+
+
+
 
 /* 
 ---------------------------------------------
@@ -256,6 +325,7 @@ MASTHEAD
 	background-color: #F7F7F2;
 }
 
+
 /* ~
 BANNER 
 ~ */
@@ -270,6 +340,7 @@ BANNER
 	margin: 0 auto;
 
 }
+
 
 /* ~
 CALLOUT 
@@ -295,6 +366,7 @@ CALLOUT
 	border: none;
 	padding: 0;	
 }
+
 
 /* ~
 PERSON LIST 
@@ -375,6 +447,7 @@ HEADER
 	margin: 1.75rem auto 0 auto;
 }
 
+
 /* ~
 FOOTER 
 ~ */
@@ -393,69 +466,16 @@ FOOTER
 
 /* ~
 ---------------------------------------------
+
+WILD WEST BELOW HERE
+
+---------------------------------------------
 ~ */
-
-/* WILD WEST BELOW HERE */
-
-
-
-
-/* Typography */
-
-
-
-
-
-
-/* Flag and navigation */
-
 
 
 
 
 /* VOLUNES */
-.archive-grid {
-	list-style: none;
-	padding: 0;
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-}
-
-.archive-grid.decades {
-	grid-template-columns: repeat(4, 1fr);
-}
-
-.volume-link {
-	
-}
-
-.volume-link a {
-	display: block;
-	text-align: center;
-	padding: 10px;
-	border-radius: 4px;
-	background: #eaf3ff;
-	border: 1px solid #eaf3ff;
-}
-
-.volume-link a.some {
-/* 	background: #FCE7C4; */
-	background: none;
-	border-color: #FCE7C4;
-}
-
-.volume-link a.none {
-/* 	background: #FDC1BF; */
-	background: none;
-	border-color: #FDC1BF;
-}
-
-.volume-link span {
-	font-size: 66%;
-	display: block;
-}
 
 /* THUMBNAILS */
 .thumbnail-grid {

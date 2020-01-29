@@ -3,12 +3,13 @@
 		"volume": 1,
 		"start_year": 1953,
 		"end_year": 1954,
+		"decade": "1950s",
 		"achive_status": "all",
 		"issues": [
 			{
 			    "issue": 1,
 			    "date": "",
-			    "decade": "Fifties",
+			    
 			    "term": "Michaelmas",
 			    "editor": "John Smith",
 			    "pages": 12,
@@ -21,6 +22,7 @@
 		"volume": 2,
 		"start_year": 1954,
 		"end_year": 1955,
+		"decade": "1950s",
 		"achive_status": "none",
 		"issues": []
 	},
@@ -28,6 +30,7 @@
 		"volume": 3,
 		"start_year": 1955,
 		"end_year": 1956,
+		"decade": "1950s",
 		"achive_status": "none",
 		"issues": []
 	},
@@ -42,6 +45,7 @@
 		"volume": 5,
 		"start_year": 1957,
 		"end_year": 1958,
+		"decade": "1950s",
 		"achive_status": "none",
 		"issues": []
 	}
@@ -50,12 +54,12 @@
 		"volume": 55,
 		"start_year": 2007,
 		"end_year": 2008,
+		"decade": "2010s",
 		"achive_status": "all",
 		"issues": [
 			{
 				"issue": 1,
 				"date": "",
-				"decade": "2010s",
 				"term": "Michaelmas",
 				"editor": "Gearóid O'Rourke",
 				"pages": 24,
@@ -65,7 +69,6 @@
 			{
 				"issue": 2,
 				"date": "",
-				"decade": "2010s",
 				"term": "Michaelmas",
 				"editor": "Gearóid O'Rourke",
 				"pages": 20,
@@ -75,7 +78,6 @@
 			{
 				"issue": 3,
 				"date": "",
-				"decade": "2010s",
 				"term": "Michaelmas",
 				"editor": "Gearóid O'Rourke",
 				"pages": 24,
@@ -85,7 +87,6 @@
 			{
 				"issue": 4,
 				"date": "",
-				"decade": "2010s",
 				"term": "Michaelmas",
 				"editor": "Gearóid O'Rourke",
 				"pages": 24,
@@ -95,7 +96,6 @@
 			{
 				"issue": 5,
 				"date": "",
-				"decade": "2010s",
 				"term": "Michaelmas",
 				"editor": "Gearóid O'Rourke",
 				"pages": 24,
@@ -105,7 +105,6 @@
 			{
 				"issue": 6,
 				"date": "",
-				"decade": "2010s",
 				"term": "Hilary",
 				"editor": "Gearóid O'Rourke",
 				"pages": 24,
@@ -115,7 +114,6 @@
 			{
 				"issue": 7,
 				"date": "",
-				"decade": "2010s",
 				"term": "Hilary",
 				"editor": "Gearóid O'Rourke",
 				"pages": 24,
@@ -125,7 +123,6 @@
 			{
 				"issue": 8,
 				"date": "",
-				"decade": "2010s",
 				"term": "Hilary",
 				"editor": "Gearóid O'Rourke",
 				"pages": 24,
@@ -135,7 +132,6 @@
 			{
 				"issue": 9,
 				"date": "",
-				"decade": "2010s",
 				"term": "Hilary",
 				"editor": "Gearóid O'Rourke",
 				"pages": 24,
@@ -145,7 +141,6 @@
 			{
 				"issue": 10,
 				"date": "",
-				"decade": "2010s",
 				"term": "Hilary",
 				"editor": "Gearóid O'Rourke",
 				"pages": 24,
