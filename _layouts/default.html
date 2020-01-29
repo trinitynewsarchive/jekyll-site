@@ -11,25 +11,24 @@
   </head>
   <body>
 
-    <header class="global-nav">
+    <header class="global-header">
+      
       <div class="wrapper">
+	     
+	    {% include masthead.html %}
 
-
-      <h1 class="flag">
-        Trinity News
-      </h1>
-      <p class="motto">An Archive <span>from</span> 1953 <span>to</span> 1970</p>
-      
-      {% include nav.html %}
-      
+	    {% include nav.html %}
+	      
       </div>
     </header>
-	
+    
+	<main>
 	{{ content }}
+	</main>
 	
-	    <footer class="global-footer">
+    <footer class="global-footer">
 	    <div class="wrapper">
-	      <p>For more information, please contact info@trinitynewsarchive.ie</p>	
+	      <p class="x-small helper">For more information, please contact info@trinitynewsarchive.ie</p>	
 	    </div>
     </footer>
   </body>

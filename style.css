@@ -1,100 +1,246 @@
+ /*
+	  
+---------------------------------------------	  
+FONTS
+---------------------------------------------
+font-family: 'Playfair Display SC', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Libre Franklin', sans-serif;
+
+---------------------------------------------
+COLORS
+---------------------------------------------
+BG FILL: 			#F7F7F2
+
+SEARCH BLUE: 		#1E6AD6
+LINK GREEN:			#1A8249
+DARK GREEN:			#2F4F3E
+
+HEADLINE:			#141A17
+TEXT:				#29332D
+FADED TEXT:			#858C88
+
+LINES:				#E3E6E4
+
+---------------------------------------------
+
+*/
+
+
+
+/* 
+---------------------------------------------
+TYPOGRAPHY
+---------------------------------------------
+*/
+
 html {
-  scroll-behavior: smooth;
+	font-size: 16px;
 }
 
 body {
-  font-family: 'Merriweather', Georgia, serif;
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  color: #232529;
+	font-family: 'Merriweather', Georgia, serif;
+	line-height: 1.5rem;
+	color: #29332D;	
+}
+
+.xx-small {
+	font-size: 0.75rem;
+	line-height: 1.25rem;
+}
+
+.x-small {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+.small {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.medium {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+.large {
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+}
+
+.x-large {
+	font-size: 1.75rem;
+	line-height: 1.75rem;
+}
+
+.xx-large {
+	font-size: 3rem;
+	line-height: 2.4rem;
+}
+
+.xxx-large {
+	font-size: 3.25rem;
+	line-height: 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #141A17;
+	margin: 2rem 0 0 0;
+}
+
+
+h1, h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+}
+
+	h3, h4, h5, h6 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 500;
+}
+
+p {
+	margin: 1rem 0 2rem 0;
+}
+
+li {
+	
+}
+
+.allcaps {
+	font-family: 'Libre Franklin', 'Tahoma', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #858C88;
+	line-height: 1rem;
+	font-weight: 500;
+}
+
+.helper {
+	font-family: 'Libre Franklin', 'Tahoma', sans-serif;
+	color: #858C88;
+}
+
+.banner-title {
+	text-align: center;
+}
+
+.page-title {
+	text-align: center;
+	padding: 0.5em 0 0.25em 0;
+}
+
+.standfirst {
+	color: #141A17;
+}
+
+/* 
+---------------------------------------------
+LINKS, BUTTONS & NAV
+---------------------------------------------
+*/
+
+a {
+	color: #1A8249;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.jump-links {
+	text-align: center;
+	margin: 1rem 0;
+	padding: 1rem 0;
+}
+
+.nav-link {
+	list-style: none;
+	padding: 0;
+	margin: 0.5rem 0;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.nav-link a {
+	padding: 1rem 2rem;
+	text-decoration: none;
+	color: #858C88;
+	border-radius: 2rem;
+}
+
+.nav-link a:hover {
+	background: rgba(133, 140, 136, 0.05);
+}
+
+/* 
+---------------------------------------------
+LAYOUT
+---------------------------------------------
+*/
+
+html {
+  scroll-behavior: smooth;
   background-color: #ffffff;
 }
 
-/* Layout — we should probably use the grid property */
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .wrapper {
   margin: 0 auto;
   max-width: 720px;
 }
 
-/* Typography */
-.banner {
-	background-color: #f9f9f6;
-	padding: 0 0 56px 0;
-}
 
-.banner h2 {
-	font-size: 3.25em;
-	margin: 0;
-	font-family: 'Playfair Display', 'Times New Roman', serif;
-	font-weight: 400;
-	max-width: 960px;
-	margin: 0 auto;
+/* 
+---------------------------------------------
+MODULES
+---------------------------------------------
+*/
+
+/* ~
+MASTHEAD
+~ */
+
+.masthead {
 	text-align: center;
-	line-height: 1.2;
+	display: block;
 }
 
-.page-title {
-  font-family: 'Playfair Display', 'Times New Roman', serif;
-  text-align: center;
-  font-size: 3em;
-  font-weight: 400;
-  letter-spacing: -1px;
-  padding: 0.5em 0 0.25em 0;
-
-}
-.section-title {
-  font-family: 'Libre Franklin', 'Tahoma', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 1px;
-  color: #6b706c;
-}
-
-.jump-link {
-  text-align: center;
-}
-
-a {
-	color: #2474e5;
+.masthead:hover {
 	text-decoration: none;
-}
-
-/* Flag and navigation */
-.global-nav {
-  padding: 1em 0 2em 0;
-  background-color: #f9f9f6;
+	opacity: 0.9;
 }
 
 .flag {
-  text-align: center;
   font-family: 'Playfair Display SC', serif;
   font-weight: 700;
-  font-size: 3.75em;
-  letter-spacing: 1px;
+  font-size: 3.875rem;
   line-height: 1;
-  margin: 24px 0;
-  padding: 0 0 32px 0;
-  border-bottom: 1px solid #efefef;
+  margin: 1.5rem 0;
+  padding: 0 0 2rem 0;
+  border-bottom: 1px solid #E3E6E4;
+  -webkit-font-smoothing: antialiased;
 }
 
 .motto  {
-  text-align: center;
   font-family: 'Playfair Display SC', serif;
   display: block;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #404754;
+  color: #29332D;
   line-height: 1;
-  font-size: 1em;
+  font-size: 1rem;
   width: 16em;
-  margin: -36px auto 0 auto;
-  background-color: #f9f9f6;
+  margin: -2rem auto 0 auto;
+  background-color: #ffffff;
 }
 
 .motto span {
@@ -102,98 +248,169 @@ a {
   text-transform: lowercase;
   font-style: italic;
   letter-spacing: normal;
-  font-size: 0.9em;
-  opacity: 0.95;
+  font-size: 85%;
+  opacity: 0.9	;
 }
 
-.global-nav nav, 
-.global-nav nav ul {
+.global-header .motto {
+	background-color: #F7F7F2;
+}
+
+/* ~
+BANNER 
+~ */
+
+.banner {
+	background-color: #F7F7F2;
+	padding: 0 0 3.5rem 0;
+}
+
+.banner h2 {
+	max-width: 960px;
+	margin: 0 auto;
+
+}
+
+/* ~
+CALLOUT 
+~ */
+
+.callout {
+	border: 1px solid #E3E6E4;
+	border-radius: 4px;
+	padding: 2rem 2rem 1.5rem 2rem;
+	margin: 1em 0;
+	background: #F7F7F2;
+	font-family: 'Libre Franklin', 'Tahoma', sans-serif;
+}
+
+.callout h3,
+.callout h5,
+.callout p {
+	margin: 0 0 1rem 0;
+}
+
+
+.callout .person {
+	border: none;
+	padding: 0;	
+}
+
+/* ~
+PERSON LIST 
+~ */
+
+.person-list {
+	padding: 0;
+	margin: 3rem 0 2rem 0;
+	
+}
+
+.person-list h2 {
+	padding-bottom: 2rem;
+	border-bottom: 4px solid #efefef;
+}
+
+.person {
+  border-bottom: 1px solid #efefef;
+  padding: 1rem 0 1.25rem 0;
+  list-style: none;
+}
+
+.person h1 {
+	margin: 1rem 0 1rem 0;
+  }
+  
+.person p {
+	margin: 0 0 1rem 0;
+}
+
+.midot {
+  opacity: 0.5;
+  padding: 0 1rem;
+}
+
+.title {}
+.meta {}
+.volume {}
+.years {}
+
+
+/* ~
+ACKNOWLEDGEMENT 
+~ */
+
+.acknowledgement {
+	padding: 2rem 0;
+	background-image: url(/images/volumes.png);
+	background-position: top right;
+	background-size: 15rem;
+	background-repeat: no-repeat;
+}
+
+.acknowledgement p {
+	width: 60%;
+}
+
+
+/* ~
+HEADER
+~ */
+
+.global-header {
+  padding: 1rem 0 2rem 0;
+  background-color: #F7F7F2;
+ 
+}
+
+
+.global-header nav, 
+.global-header nav ul {
 	padding: 0;
 	margin: 0;
 	text-align: center;
 }
 
-.global-nav nav {
-	margin-top: 32px;
+.global-header nav {
+	margin: 1.75rem auto 0 auto;
 }
 
-.nav-link {
-	list-style: none;
-	padding: 0;
-	margin: 1em;
-	display: inline-block;
-	font-family: 'Libre Franklin', 'Tahoma', sans-serif;
-	text-transform: uppercase;
-	font-size: 12px;
-	letter-spacing: 0.5px;
-	color: #6b706c;
-}
-
-.nav-link a {
-	padding: 16px;
-	text-decoration: none;
-	color: #6b706c;
-	border-radius: 4px;
-}
-
-.nav-link a:hover {
-	background: rgba(107, 112, 108, 0.05);
-}
-
-/* Footer */
+/* ~
+FOOTER 
+~ */
 
 .global-footer {
-  background: #232529;
-  padding: 2em;
-  color: #6b706c;
+  background: #141A17;
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+  border-top: 1rem solid #2F4F3E;
 }
 
 
 
-.people-list {
-	padding: 1em 0;
-	margin: 2em 0;
-}
-
-.people-list ol {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-/* Person */
-.person {
-  border-bottom: 1px solid #efefef;
-  padding: 20px 0 12px 0;
-}
-
-.person h1 {
-  font-weight: 400;
-  line-height: 1.2;
-  margin: 0;
-  padding: 0;
-  font-size: 1.5em;
-  font-family: 'Playfair Display', serif;
-}
-.title {
-}
-
-.meta {
-font-variant-numeric: oldstyle-nums;
-font-family: 'Libre Franklin', 'Tahoma', sans-serif;
-text-transform: uppercase;
-font-size: 12px;
-letter-spacing: 0.5px;
-color: #6b706c;
-}
-.volume {}
-.years {}
-.midot {
-  color: #cccccc;
-  padding: 0 8px;
-}
 
 
-/* ARCHIVE */
+
+/* ~
+---------------------------------------------
+~ */
+
+/* WILD WEST BELOW HERE */
+
+
+
+
+/* Typography */
+
+
+
+
+
+
+/* Flag and navigation */
+
+
+
 
 
 /* VOLUNES */
@@ -256,27 +473,6 @@ color: #6b706c;
 }
 
 
-/* Callout */
-.callout {
-	border: 1px solid #efefef;
-	border-radius: 4px;
-	padding: 32px;
-	margin: 1em 0;
-	background: #f9f9f6;
-	}
+
 	
-.callout h3 {
-	margin: 0;
-}
 
-.callout h3, 
-.callout p {
-	font-family: 'Libre Franklin', 'Tahoma', sans-serif;
-}
-
-  /*
-  font-family: 'Libre Franklin', sans-serif;
-  font-family: 'Merriweather', serif;
-  font-family: 'Playfair Display SC', serif;
-  font-family: 'Playfair Display', serif;
-  */

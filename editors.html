@@ -3,64 +3,69 @@ title: Chairpersons & Editors | Trinity News Archive
 layout: default
 ---
 
-<main>
-  <div class="wrapper">
-    <h1 class="page-title">Chairpersons & Editors</h1>
-    <p class="jump-link">Jump to <a href="#chairpersons">Chairpersons, 1953—1980</a>  or  <a href="#editors">Editors, 1980—2020</a></p>
+<div class="wrapper">
+	<h1 class="page-title xx-large">Chairs & Editors</h1>
+	
+	<h4 class="jump-links x-small">Skip directly to <a href="#chairpersons">Chairs, 1953&ndash;1980</a>  or  <a href="#editors">Editors, 1980&ndash;2020</a></h4>
+	
+	<p class="small">This material is available thanks to a donation of five bound volumes by Colin Smythe. Funding to digitise the volumes was generously provided by the TCD Assocation and Trust and the Publications Committee and carried out by Glenbeigh Records Management. The project was organised by Martin McKenna (editor, 2008–9) and launched at the Publications Committee Alumni Dinner in the Atrium on March 25, 2011. See <a href="#notes">notes on terminology and volume numbers</a>.</p>
+		
+	
+	
+	
+	<section id="chairpersons" >
+	  
+		<ol class="person-list">
+			<h2 class="x-large">Chairs, 1953&ndash;1980</h2>
+				
+				{% assign chairs = site.data.editors | where: "title", "Chairperson" %}
+				
+				{% for person in chairs %}
+	  
+				<li class="person">
+					
+					<h1 class="medium">{{person.name}}</h1>
+					<p class="meta xx-small allcaps">
+					  <span class="volume">Volume {{person.volume}}</span><span class="midot"> • </span><span class="years">{{person.start_year}}&ndash;{{person.end_year}} {%if person.term%}<span class="midot"> • </span> {{person.term}} term{% endif %}        
+					</p>
+				
+				</li>
+			  
+				{% endfor %}
+	  
+	  		</ol>
+	  
+	</section>
 
-    <p>This material is available thanks to a donation of five bound volumes by Colin Smythe. Funding to digitise the volumes was generously provided by the TCD Assocation and Trust and the Publications Committee and carried out by Glenbeigh Records Management. The project was organised by Martin McKenna (editor, 2008–9) and launched at the Publications Committee Alumni Dinner in the Atrium on March 25, 2011.</p>
+	
+	
+	<section id="editors">
+		
+	  	  
+		<ol start="81" class="person-list">
+			<h2 class="x-large">Editors, 1980&ndash;2020</h2>
+			
+			{% assign editors = site.data.editors | where: "title", "Editor" %}
+			{% for person in editors %}
+	  
+			<li class="person">
+		  	
+	        	<h1 class="medium">{{person.name}}</h1>
+				<p class="meta xx-small allcaps">
+	          <span class="volume">Volume {{person.volume}}</span><span class="midot"> • </span><span class="years">{{person.start_year}}&ndash;{{person.end_year}} {%if person.term%}<span class="midot"> • </span> {{person.term}} term{% endif %}</p>
+	
+	    	</li>
+			{% endfor %}
+	  
+		</ol>
+	  
+	</section>
+	
+	<section id="notes">
+		<h5 class="small">Notes on terminology &amp; volume numbers</h5>
+		<p class="x-small">This material is available thanks to a donation of five bound volumes by Colin Smythe. Funding to digitise the volumes was generously provided by the TCD Assocation and Trust and the Publications Committee and carried out by Glenbeigh Records Management.</p>
+		<p class="x-small">This material is available thanks to a donation of five bound volumes by Colin Smythe. Funding to digitise the volumes was generously provided by the TCD Assocation and Trust and the Publications Committee and carried out by Glenbeigh Records Management.</p>
+	</section>
 
-    <h4>Terminology</h4>
-    <p>This material is available thanks to a donation of five bound volumes by Colin Smythe. Funding to digitise the volumes was generously provided by the TCD Assocation and Trust and the Publications Committee and carried out by Glenbeigh Records Management.</p>
-
-    <h4>Accuracy</h4>
-    <p>The project was organised by Martin McKenna (editor, 2008–9) and launched at the Publications Committee Alumni Dinner in the Atrium on March 25, 2011.</p>
-    
-    <div class="callout">
-		<h3> Current Editor</h3>
-		<p>Our collection of issues covering the 1980's is incomplete. If you were involved in Trinity News at the time and have retained any physical issues, please get in contact at info@trinitynewsarchive.ie to help us complete the archive.</p> 
-	</div>
-
-    <section id="chairpersons" class="people-list">
-      <h2 class="section-title">Chairpersons (1953—1980)</h2>
-      
-      <ol>
-      {% assign chairs = site.data.editors | where: "title", "Chairperson" %}
-      {% for person in chairs %}
-      <li class="person">
-
-
-        <h1>{{person.name}}</h1>
-        <p class="meta">
-          <span class="volume">Volume {{person.volume}}</span><span class="midot"> • </span><span class="years">{{person.start_year}}—{{person.end_year}} {%if person.term%}<span class="midot"> • </span> {{person.term}} term{% endif %}</span>
-          
-          
-        </p>
-
-
-      </li>
-      {% endfor %}
-      </ol>
-    </section>
-    
-    <section id="editors" class="people-list">
-      <h2 class="section-title">Editors (1980—2020)</h2>
-      <ol start="81">
-      {% assign editors = site.data.editors | where: "title", "Editor" %}
-      {% for person in editors %}
-      <li class="person">
-
-
-        <h1>{{person.name}}</h1>
-        <p class="meta">
-          <span class="volume">Volume {{person.volume}}</span><span class="midot"> • </span><span class="years">{{person.start_year}}—{{person.end_year}} {%if person.term%}<span class="midot"> • </span> {{person.term}} term{% endif %}</span>
-        </p>
-
-
-
-      {% endfor %}
-      </ol>
-    </section>
-  </div>
-</main>
+</div>
 
