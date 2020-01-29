@@ -15,18 +15,26 @@ layout: default
 
     <h4>Accuracy</h4>
     <p>The project was organised by Martin McKenna (editor, 2008–9) and launched at the Publications Committee Alumni Dinner in the Atrium on March 25, 2011.</p>
+    
+    <div class="callout">
+		<h3> Current Editor</h3>
+		<p>Our collection of issues covering the 1980's is incomplete. If you were involved in Trinity News at the time and have retained any physical issues, please get in contact at info@trinitynewsarchive.ie to help us complete the archive.</p> 
+	</div>
 
     <section id="chairpersons" class="people-list">
       <h2 class="section-title">Chairpersons (1953—1980)</h2>
+      
       <ol>
-      {% assign editors = site.data.editors | where: "title", "Chairperson" %}
-      {% for person in editors %}
+      {% assign chairs = site.data.editors | where: "title", "Chairperson" %}
+      {% for person in chairs %}
       <li class="person">
 
 
         <h1>{{person.name}}</h1>
         <p class="meta">
           <span class="volume">Volume {{person.volume}}</span><span class="midot"> • </span><span class="years">{{person.start_year}}—{{person.end_year}} {%if person.term%}<span class="midot"> • </span> {{person.term}} term{% endif %}</span>
+          
+          
         </p>
 
 

@@ -3,8 +3,94 @@ title: Chairpersons & Editors | Trinity News Archive
 layout: default
 ---
 
+<main>
+  <div class="wrapper">
+    
+    <h1 class="page-title">Archive</h1>
+
+    <p>This material is available thanks to a donation of five bound volumes by Colin Smythe. Funding to digitise the volumes was generously provided by the TCD Assocation and Trust and the Publications Committee and carried out by Glenbeigh Records Management. The project was organised by Martin McKenna (editor, 2008–9) and launched at the Publications Committee Alumni Dinner in the Atrium on March 25, 2011.</p>
+
+    
+    <nav>
+	    <h3>Decades</h3>
+	    <ol class="archive-grid decades">
+		    <li class="volume-link">
+				<a href="/archive/1950s/">1950’s</a>
+			</li>
+			<li class="volume-link">
+				<a href="/archive/1960s/">1960s</a>
+			</li>
+			<li class="volume-link">
+				<a href="/archive/1970s/" class="some">1970s</a>
+			</li>
+			<li class="volume-link">
+				<a href="/archive/1980s/" class="none">1980s</a>
+			</li>
+			<li class="volume-link">
+				<a href="/archive/1990s/" class="some">1990s</a>
+			</li>
+			<li class="volume-link">
+				<a href="/archive/2000s/" class="some">2000s</a>
+			</li>
+			<li class="volume-link">
+				<a href="/archive/2010s/">2010s</a>
+			</li>
+			<li class="volume-link">
+				<a href="/archive/2020s/">2020s</a>
+			</li>
+		</ol>
+	</nav>
+	
+	<nav>
+		<h3>Volumes</h3>
+		<ol class="archive-grid">
+		
+			{% for volume in site.data.volumes %}
+			<li class="volume-link">
+				<a href="/archive/volume/{{volume.volume}}" class="{{volume.achive_status}}">
+					Vol. {{volume.volume}}  <span>{{volume.start_year}}—{{volume.end_year}}</span>
+					</a>
+			</li>
+			{% endfor %}
+		</ol>	
+	</nav>
+
+  </div>
+  
+  
+  
+</main>
+
+
+
+{% assign collection = site.data.volumes | where_exp: "item", "item.volume == 55" %}
+
+{% for item in collection %}
+
+	Vol. {{item.volume}}
+	
+	
+	{% for issue in item.issues %}
+
+		<p>Issue: {{issue.issue}}, {{issue.editor}}</p>
+	
+	{% endfor %}
+	
+
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+<!--
 <div class="wrapper">
-	<h1>Archive</h1>
+	<h2>Decades</h2>
 	<nav>
 		<a href="#fifties">1950—1959</a>
 		<span class="midot">•</span>
@@ -19,13 +105,60 @@ layout: default
 		<a href="">2000—2009</a>
 		<span class="midot">•</span>
 		<a href="">2010—2019</a>
-<!--
 		<span class="midot">•</span>
-		<a href="">2020—2029</a>
--->
+		<a href="">2020</a>
 	</nav>
 </div>
+-->
 
+
+
+<!-- JSON EXAMPLE -->
+<!--
+{% for volume in site.data.volumes %}
+	
+	Vol. {{volume.volume}} 
+	
+	{% unless volume.achive_status == "none" %}
+	
+	
+	{% for issue in volume.issues %}
+
+		<p>Issue: {{issue.issue}}, {{issue.editor}}</p>
+	
+	{% endfor %}
+	
+	{% else %}
+	
+	<p>Help us</p>
+	
+	{% endunless%}
+
+
+{% endfor %}
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 
 <div id="fifties" class="wrapper">
  
@@ -60,11 +193,11 @@ layout: default
 	<h2>1980’s</h2> 
 	
 	<p>This material is available thanks to a donation of five bound volumes by Colin Smythe. Funding to digitise the volumes was generously provided by the TCD Assocation and Trust and the Publications Committee and carried out by Glenbeigh Records Management.</p>
-	
 	<div class="callout">
 		<h3> Missing issues</h3>
 		<p>Our collection of issues covering the 1980's is incomplete. If you were involved in Trinity News at the time and have retained any physical issues, please get in contact at info@trinitynewsarchive.ie to help us complete the archive.</p> 
 	</div>
+	
 	
 	<ol class="decade">
 		{% assign fifties = site.data.issues | where: "decade", "Fifties" %}
@@ -83,3 +216,4 @@ layout: default
 	</ol>
 	
 </div>
+-->

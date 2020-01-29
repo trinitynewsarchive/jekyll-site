@@ -1,0 +1,72 @@
+[
+  {
+    "pdf": "LINK",
+    "thumb": "LINK",
+    "volume": 1,
+    "issue": 1,
+    "date": "",
+    "term": "Michaelmas",
+    "editor": "John Smith",
+    "decade": "Fifties",
+    "actual_year": 1963,
+    "start_year": 1953,
+    "end_year": 1954,
+    "pages": 12
+  },
+  {
+    "pdf": "LINK",
+    "thumb": "LINK",
+    "volume": 1,
+    "issue": 2,
+    "date": "",
+    "term": "Hilary",
+    "editor": "John Smith",
+    "decade": "Fifties",
+    "actual_year": 1954,
+    "start_year": 1954,
+    "end_year": 1954,
+    "pages": 12
+  },
+  {
+    "pdf": "LINK",
+    "thumb": "LINK",
+    "volume": 1,
+    "issue": 3,
+    "date": "",
+    "term": "Trinity",
+    "editor": "John Smith",
+    "decade": "Fifties",
+    "actual_year": 1954,
+    "start_year": 1954,
+    "end_year": 1954,
+    "pages": 12
+  },
+  {
+    "pdf": "LINK",
+    "thumb": "LINK",
+    "volume": 2,
+    "issue": 1,
+    "date": "",
+    "term": "Michaelmas",
+    "editor": "David Zucker",
+    "decade": "Fifties",
+    "actual_year": 1954,
+    "start_year": 1954,
+    "end_year": 1955,
+    "pages": 12
+  },
+  {
+    "pdf": "LINK",
+    "thumb": "LINK",
+    "volume": 2,
+    "issue": 2,
+    "date": "",
+    "term": "Hilary",
+    "editor": "David Zucker",
+    "decade": "Fifties",
+    "actual_year": 1955,
+    "start_year": 1954,
+    "end_year": 1955,
+    "pages": 12
+  }
+]
