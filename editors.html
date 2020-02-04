@@ -12,17 +12,16 @@ layout: default
 	<h1 class="page-title xx-large">Chairs & Editors</h1>
 	
 	<h4 class="jump-links x-small">Skip directly to <a href="#chairpersons">Chairs, 1953&ndash;1980</a>  or  <a href="#editors">Editors, 1980&ndash;2020</a></h4>
-	
-	<p class="small">Since 1953, {{editor_count}} individuals have taken the reigns of Trinity News. See <a href="#notes">notes on terminology and volume numbers</a>.</p>
-		
-	
+			
+	<p class="small">Listed below is a record of every Chair or Editor of <i>Trinity News</i> from 1953 to 2020. Since its first issue, some {{editor_count}} individuals have taken up the stewardship of the newspaper. Over the years the titles used have changed, as have the tenures of these individuals, yet the enthusiasm for undergraduate journalism has remained the same. <a href="#notes">See more detailed notes on titles, volume numbering and accuracy.</a></p>
+
 	
 	<section id="chairpersons" >
 	  
 		<ol class="person-list">
 			<h2 class="x-large">Chairs, 1953&ndash;1980</h2>
 				
-				{% assign chairs = site.data.editors | where: "title", "Chairperson" %}
+				{% assign chairs = site.data.editors | where: "title", "Chairman" %}
 				
 				{% for person in chairs %}
 	  
@@ -66,11 +65,16 @@ layout: default
 	</section>
 	
 	<section id="notes">
-		<h5 class="small">Notes on terminology &amp; volume numbers</h5>
-		<h6 class="x-small">Terminology</h6>
-		<p class="x-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-		<h6 class="x-small">Volume numbers</h6>
-		<p class="x-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		<h5 class="medium">Notes on titles, volume numbering, and accuracy</h5>
+		<h6 class="x-small">Titles: “Chairmen” and “Editors”</h6>
+		<p class="x-small">At the foundation of <i>Trinity News</i> in 1953 the individual responsible for directing the production of the newspaper was, in the style of the times, referred to as a “Chairman”. In the following years the position was held by both male and female students. Here we refer to the role simply as “Chair”. </p> 
+		<p class="x-small">At some point in the late 1970s or the early 1980s the title of “Chairman” was dropped in favor of “Editor”. The exact year of this transition is not currently known to us, nor is the rationale. Here we have, somewhat arbitrarily, decided to make 1980 the year of demarcation.</p>
+		<h6 class="x-small">Volume numbering</h6>
+		<p class="x-small">The volume numbers referenced here proceed in sequence from Volume 1 in 1953 and assume one volume was produced per academic year.</p> 
+		<p class="x-small">However, at various intervals over the last 67 years, volume numbers have been unintentionally reset, or misprinted, on certain volumes, or even on certain sequences of volumes. As a result, in some cases the volume number listed here does not match the volume number listed at the time of publication.</p>
+	
+		<h6 class="x-small">Accuracy</h6>
+		<p class="x-small">Every effort has been made to ensure the information presented here is complete and accurate. However, there are periods of time for which detailed records do not exists. Please bring any errors to our attention by emailing <a href="mailto:info@trinitynewsarchive.ie">info@trinitynewsarchive.ie</a>.</p>
 	</section>
 
 </div>
