@@ -12,18 +12,25 @@ layout: default
 
     
     <nav>
+	    <div class="callout">
+		<h3 class="small"> Missing issues</h3>
+		<p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	</div>
 	    
-	    
-	 <h2 class="large">New archive</h2>
-
 		
 		
 		
 	{% assign issues_by_volume = site.data.archive | group_by:"volume" %}
 		
 	{% for volume in issues_by_volume %}
+	<a href="#vol-{{volume.name | round}}">Vol {{volume.name | round}}</a>,
+
+	{%endfor%}
 	
-	<h3>Volume {{volume.name | round}}</h3>
+	
+	{% for volume in issues_by_volume %}
+	
+	<h3 id="vol-{{volume.name | round}}">Volume {{volume.name | round}}</h3>
 	
 	<ol class="collection-link-grid volumes">	
 		{% for issue in volume.items%}
@@ -32,7 +39,10 @@ layout: default
 		<a href="/archive/assets/{{issue.pdf}}">
 			<img src="/archive/assets/{{issue.thumb}}" width="100">
 			
-			Vol: {{issue.volume}}<br/>Issue: {{issue.issue}}
+			<p>Issue: {{issue.issue}}</p>
+			
+			<p>{{issue.publication_date | date: "%A %B %-d, %Y"}}</p>
+
 	
 			
 		</a>
