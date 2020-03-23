@@ -1,0 +1,30 @@
+---
+title: Volume 1 | Archive | Trinity News Archive 
+layout: default
+---
+<div class="wrapper">
+	
+	<h1 class="page-title xx-large">Volume: 1</h1>
+	{% assign current_volume = site.data.archive | where_exp: "item", "item.volume == '1'" %}
+	
+	
+	<ol class="collection-link-grid volumes">
+			
+		{% for issue in current_volume  %}
+
+		
+		<li class="collection-link">
+		
+		<a href="/archive/assets/{{issue.pdf}}">
+			<img src="/archive/assets/{{issue.thumb}}" width="100">
+			
+			Vol: {{issue.volume}}<br/>Issue: {{issue.issue}}
+	
+			
+		</a>
+		</li>
+		{%endfor%}
+	</ol>
+	
+	
+</div>

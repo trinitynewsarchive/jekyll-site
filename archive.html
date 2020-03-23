@@ -12,6 +12,43 @@ layout: default
 
     
     <nav>
+	    
+	    
+	 <h2 class="large">New archive</h2>
+
+		
+		
+		
+	{% assign issues_by_volume = site.data.archive | group_by:"volume" %}
+		
+	{% for volume in issues_by_volume %}
+	
+	<h3>Volume {{volume.name | round}}</h3>
+	
+	<ol class="collection-link-grid volumes">	
+		{% for issue in volume.items%}
+		<li class="collection-link">
+		
+		<a href="/archive/assets/{{issue.pdf}}">
+			<img src="/archive/assets/{{issue.thumb}}" width="100">
+			
+			Vol: {{issue.volume}}<br/>Issue: {{issue.issue}}
+	
+			
+		</a>
+		</li>
+		{%endfor%}
+	</ol>
+	{%endfor%}
+		
+		
+		
+		
+		
+		
+		
+		
+	{% comment %} 	
 	    <h2 class="large">Browse by decade</h2>
 	    
 	    <ol class="collection-link-grid decades">
@@ -40,6 +77,16 @@ layout: default
 	</nav>
 	
 	<nav>
+		
+		
+	
+		
+		
+		
+		
+
+		
+		
 		<h2 class="large">Browse by volume*</h2>
 		<section id="notes">
 		<h5 class="small">A note on volume numbers</h5>
@@ -67,10 +114,10 @@ layout: default
 
   </div>
 
- 
+ {% endcomment %} 
+
   
 </main>
-
 
 {% comment %} 
 
