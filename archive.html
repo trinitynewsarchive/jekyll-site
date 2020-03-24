@@ -37,11 +37,11 @@ layout: default
 		<li class="collection-link">
 		
 		<a href="/archive/assets/{{issue.pdf}}">
-			<img src="/archive/assets/{{issue.thumb}}" width="100">
+			<img src="/archive/assets/{{issue.thumb}}">
 			
-			<p>Issue: {{issue.issue}}</p>
+			<p class="x-small">Issue: {{issue.issue}}</p>
 			
-			<p>{{issue.publication_date | date: "%A %B %-d, %Y"}}</p>
+			<p class="xx-small">{{issue.publication_date | date: "%A,<br/> %b %-d, %Y"}}</p>
 
 	
 			
